@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+		<title>Boton</title>
+	
+		<script type="text/javascript">
+			
+			
+			function bienvenidos(){
+				alert("Oprimio el boton");
+			};
+			
+			
+			function accion(){
+				alert("Oprimio el boton");
+			};
+			
+			
+			function paises(){
+				var paisSeleccionado = document.seleccionDePais.pais.value;
+				var numerador = 1;
+				var total = parseInt(paisSeleccionado) + numerador;
+				
+				if(total < 3)
+				{
+				alert("/// Menor a 3");
+				}else{
+				alert("+++ VA A SALIR");
+				location.href="http://www.google.com";
+				}
+				
+			};
+			
+		</script>
+	
+	</head>
+	
+	<body>
+	
+		<div style="padding-top:50px;width:200px;height:50px; margin:0 auto;padding-left:50px;">
+			
+			<input type="button" value="Bot&oacute;n de mensaje" onclick="accion()"/>
+		
+			<form name="seleccionDePais">
+				<select name="pais" onchange="paises()">
+					<option value="0" selected>Seleccione una Opcion</option>
+					<option value="1">Colombia</option>
+					<option value="2">Peru</option>
+					<option value="3">Venezuela</option>
+					<option value="4">Argentina</option>
+				</select>
+			</form>
+		
+		
+		
+		
+		</div>
+	
+	</body>
+	
+</html>
